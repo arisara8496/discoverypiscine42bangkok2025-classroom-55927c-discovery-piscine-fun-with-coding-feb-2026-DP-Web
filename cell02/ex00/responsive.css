@@ -1,0 +1,50 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ส่วนบน: พื้นหลังชมพูตาม ex04 */
+.top-section {
+    background-color: #ffcee1;
+    padding: 20px;
+    text-align: center;
+}
+
+.media-group img, .shop-item img {
+    max-width: 150px;
+    height: auto;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.shops {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer-text {
+    text-align: right;
+    font-style: italic;
+    font-family: monospace;
+}
+
+
+.bottom-table {
+    width: 100%;
+    flex-grow: 1; 
+    border-collapse: collapse;
+}
+
+.bottom-table td {
+    border: 1px solid black;
+    text-align: center;
+    font-size: 4vw; 
+    width: 50%;
+}
+
+.green-cell { background-color: #c5d195; }
+.red-cell { background-color: #f4c2b2; }

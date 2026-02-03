@@ -1,0 +1,32 @@
+body, html {
+    height: 100%;
+}
+.bg1 ,.bg2 {
+    height: 100%;
+    background-size:cover;
+    background-position: center top;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+}
+
+.bg1 {
+    background-image: url("https://cdn.discordapp.com/attachments/1298514107380793384/1298867211846291487/IMG_20221110_152901.jpg?ex=671b1fdb&is=6719ce5b&hm=2a9bc152992ac540db7e07fbc9a4804474faeef0e23391363cd34df49fadfd63&");
+}
+
+.bg2 {
+    background-image: url("https://cdn.discordapp.com/attachments/1298514107380793384/1298867212677021768/IMG_20240412_174308.jpg?ex=671b1fdb&is=6719ce5b&hm=28e37a0d27417c5079a38480504e6401fc8a03a26b2d5a3b43fab3bb452a9027&");
+}
+
+.text {
+    text-align: center;
+    background-color: black;
+    color: antiquewhite;
+    height: 100%;
+    padding: 50% 50%;
+}
+
+.capt {
+    background-color: transparent;
+    text-align: center;
+    padding: 50% 50%;
+}
