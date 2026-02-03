@@ -8,23 +8,98 @@
             height: 100%;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            background-color: #ffcee1;
+            font-family: sans-serif;
+        }
+
+        .top-content {
+            padding: 2vw;
+            text-align: center;
+        }
+
+        .main-title { font-size: 5vw; margin: 1vw 0; }
+        
+        .shop-title { 
+            font-size: 3.5vw; 
+            color: white; 
+            margin: 2vw 0; 
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        .grid-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2vw;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .item img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 1vw;
+        }
+
+        .link-text { font-size: 1.2vw; color: blue; text-decoration: underline; }
+
+        hr { width: 95%; margin: 2vw auto; border: 0.1vw solid black; }
+
+        .footer {
+            text-align: right;
+            font-family: monospace;
+            font-size: 1.2vw;
+            padding-right: 2vw;
         }
 
         table {
             width: 100%;
-            height: 100%;
+            flex-grow: 1;
             border-collapse: collapse;
         }
 
         td {
-            width: 50%;
-            text-align: center;
-            font-size: 5vw;
             border: 1px solid black;
+            text-align: center;
+            width: 50%;
+            font-size: 6vw;
         }
     </style>
 </head>
 <body>
+
+    <header class="top-content">
+        <h1 class="main-title">Piscine Web</h1>
+        
+        <div class="grid-layout">
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=INscMGmhmX4">
+                    <img src="https://i.pinimg.com/736x/24/73/74/247374fa9bc64b1dd5af632a8e22d5e5.jpg" alt="แมว">
+                </a>
+            </div>
+            <div class="item">
+                <img src="https://i.pinimg.com/736x/fe/c2/6a/fec26a38424e3138ea4afc135090cca4.jpg" alt="ดอกไม้">
+            </div>
+        </div>
+
+        <h2 class="shop-title">☆ Welcome to Patty's Shop! ☆</h2>
+        
+        <div class="grid-layout">
+            <div class="item">
+                <img src="https://logowik.com/content/uploads/images/shopee1950.jpg" alt="Shopee">
+                <br><a class="link-text" href="https://shopee.co.th">www.shopee.co.th</a>
+            </div>
+            <div class="item">
+                <img src="https://images.seeklogo.com/logo-png/38/1/lazada-logo-png_seeklogo-387585.png" alt="Lazada">
+                <br><a class="link-text" href="https://www.lazada.co.th">www.lazada.co.th</a>
+            </div>
+        </div>
+
+        <hr>
+        <p class="footer">© ajitprap 2026</p>
+    </header>
 
     <table>
         <tr>
