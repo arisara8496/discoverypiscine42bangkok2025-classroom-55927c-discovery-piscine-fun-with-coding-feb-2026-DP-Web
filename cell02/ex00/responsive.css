@@ -2,78 +2,34 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    background-color: #ffcee1;
-    font-family: sans-serif;
 }
 
-.top-section {
-    padding: 2vw;
-    text-align: center;
-}
-
-
-.responsive-main-title {
-    font-size: 4vw;
-    margin: 1vw 0;
-}
-
-
-.responsive-shop-title {
-    color: white;
-    font-size: 3vw;
-    margin: 2vw 0;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-}
-
-
-.image-grid, .shop-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2vw;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.item img {
+table {
     width: 100%;
-    max-width: 250px;
-    height: auto;
-    border-radius: 1vw;
-}
-
-.responsive-link {
-    font-size: 1.2vw;
-    color: blue;
-}
-
-hr {
-    width: 90%;
-    margin: 1.5vw auto;
-    border: 0.1vw solid black;
-}
-
-.footer-text {
-    text-align: right;
-    font-family: monospace;
-    font-size: 1vw;
-    padding-right: 2vw;
-}
-
-
-.bottom-table {
-    width: 100%;
-    flex-grow: 1;
+    height: 100%;
     border-collapse: collapse;
 }
 
-.bottom-table td {
+td {
     border: 1px solid black;
     text-align: center;
-    width: 50%;
     font-size: 5vw;
+    width: 50%;
 }
 
-.green-cell { background-color: #c5d195; }
-.red-cell { background-color: #f4c2b2; }
+.first-cell { background-color: #c5d195; }
+.second-cell { background-color: #f4c2b2; }
+
+@media screen and (max-width: 600px) {
+    table, tr, td {
+        display: block;
+        width: 100% !important;
+    }
+    
+    td {
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
